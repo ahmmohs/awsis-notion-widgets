@@ -6,12 +6,12 @@
   <title>Document</title>
 </head>
 <body>
-  <div style="display: flex; flex-direction: row; column-gap: 8px;">
+  <div style="display: flex; flex-direction: row; column-gap: 8px; width: 100%; height: 100%; align-items: center; justify-content: center;">
       <div
         id="home"
         onclick="navigate(this.id)"
         role="button"
-        style="box-sizing:border-box; height: 32px; display: flex;
+        style="box-sizing:border-box; height: 32px; display: flex; cursor: pointer;
               flex-direction: row; column-gap: 8px; align-items: center; padding: 8px 12px;
               font-size: 14px; font-weight: 500; line-height: 1.2;
               border-radius: 3px; color: #37352F; border: 1px solid rgba(57, 54, 47, .16)"
@@ -24,7 +24,7 @@
       onclick="navigate(this.id)"
         role="button"
         onclick=""
-        style="box-sizing:border-box; height: 32px; display: flex;
+        style="box-sizing:border-box; height: 32px; display: flex; cursor: pointer;
               flex-direction: row; column-gap: 8px; align-items: center; padding: 8px 12px;
               font-size: 14px; font-weight: 500; line-height: 1.2;
               border-radius: 3px; color: #37352F; border: 1px solid rgba(57, 54, 47, .16)"
@@ -36,7 +36,7 @@
     id="work"
     onclick="navigate(this.id)"
         role="button"
-        style="box-sizing:border-box; height: 32px; display: flex;
+        style="box-sizing:border-box; height: 32px; display: flex; cursor: pointer;
               flex-direction: row; column-gap: 8px; align-items: center; padding: 8px 12px;
               font-size: 14px; font-weight: 500; line-height: 1.2;
               border-radius: 3px; color: #37352F; border: 1px solid rgba(57, 54, 47, .16)"
@@ -48,7 +48,7 @@
     id="habits"
     onclick="navigate(this.id)"
         role="button"
-        style="box-sizing:border-box; height: 32px; display: flex;
+        style="box-sizing:border-box; height: 32px; display: flex; cursor: pointer;
               flex-direction: row; column-gap: 8px; align-items: center; padding: 8px 12px;
               font-size: 14px; font-weight: 500; line-height: 1.2;
               border-radius: 3px; color: #37352F; border: 1px solid rgba(57, 54, 47, .16)"
@@ -60,7 +60,7 @@
    id="goals"
    onclick="navigate(this.id)"
         role="button"
-        style="box-sizing:border-box; height: 32px; display: flex;
+        style="box-sizing:border-box; height: 32px; display: flex; cursor: pointer;
               flex-direction: row; column-gap: 8px; align-items: center; padding: 8px 12px;
               font-size: 14px; font-weight: 500; line-height: 1.2;
               border-radius: 3px; color: #37352F; border: 1px solid rgba(57, 54, 47, .16)"
@@ -80,15 +80,15 @@
 
       switch (id) {
         case 'home':
-          window.open(homeLink, '_blank').focus();
+          window.open(homeLink, '_self').focus();
         case 'work':
-          window.open(workLink, '_blank').focus();
+          window.open(workLink, '_self').focus();
         case 'habits':
-          window.open(habitsLink, '_blank').focus();
+          window.open(habitsLink, '_self').focus();
         case 'today':
-          window.open(todayLink, '_blank').focus();
+          window.open(todayLink, '_self').focus();
         case 'goals':
-          window.open(goalsLink, '_blank').focus();
+          window.open(goalsLink, '_self').focus();
       }
     }
   </script>
