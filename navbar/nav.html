@@ -80,16 +80,18 @@
 
       switch (id) {
         case 'home':
-          window.open(homeLink, '_parent').focus();
+          window.open(homeLink, '_blank').focus();
         case 'work':
-          window.open(workLink, '_parent').focus();
+          window.open(workLink, '_blank').focus();
         case 'habits':
-          window.open(habitsLink, '_parent').focus();
+          window.open(habitsLink, '_blank').focus();
         case 'today':
-          window.open(todayLink, '_parent').focus();
+          window.open(todayLink, '_blank').focus();
         case 'goals':
-          window.open(goalsLink, '_parent').focus();
+          window.open(goalsLink, '_blank').focus();
       }
+
+      window.close();
     }
   </script>
 </body>
